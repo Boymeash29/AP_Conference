@@ -15,7 +15,10 @@ Don't worry about the mix of companies - they are silly names chosen as a separa
 
 - 10 pts for file I/O successful
 - 5pts for company load
-- 10pts for manually adding new registrants/attendees
+- 5pts for manually adding new registrants/attendees
 - 10pts for seating people correctly distributed across tables
-- 5pts for Roster printouts and search function
+- 5pts for Roster printouts (give user choice of all, by table, by Company)
+- 5pts For working search for participant function
 - 5pts for documentation
+- 5pts for frequent and well commented Github commits.
+-   Magic dump of more than 25+ lines of code will not earn points
