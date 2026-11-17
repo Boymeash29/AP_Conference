@@ -10,7 +10,9 @@ As drawn on the board and explained in the files attached to this repo, students
 Don't worry about the mix of companies - they are silly names chosen as a separate file.  You may manually create a data structure to support the Company Names and ID's (for now) that are cross referenced in the seating assignments. - But your working solution should support scalability. -
 
 ***POINTS - SCORING***
+
 **50pts for working solution** 
+
 - 10 pts for file I/O successful
 - 5pts for company load
 - 10pts for manually adding new registrants/attendees
