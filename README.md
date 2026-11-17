@@ -1,18 +1,19 @@
 # Conference_AP
 Party Planner / HR Conference
 
-github Classroom Assignment - for groups
+Project is Due after 2 class periods - so plan early and implement on a good, sound design.
 
-Project is Due after 2 classes
+PREAMBLE - Conference Planner is yet another opportunity for students to explore working with multiple Java classes that 5 the five elements (from class) as well as external data sets, file I/O ( a new tool for the updated AP Java CED ) and, of course Arrays - 1D and 2D Arrays.  Students will also continue to write well documented and well structured programs that interface with a user logically (prompts, prints, etc).
 
-there are 4 class days between now and then - and some time will be given on each of those to have team meetings, discuss etc. The reason or purpose with github and Repl.it is to do some asynchronous work!!
+As drawn on the board and explained in the files attached to this repo, students are tasked with creating a multi-file Java class project that allows scalability down the road.  Sorting is not really critical here - students are given a set of seating parameters (10 tables, 10 ppl per table, no more than 2 ppl per company an any table **these are subject to change in the next go-round**) Seats will be populated programmatically by first loading in a given data file, then permitting manual registration of individual people for this HR conference.  **Printouts** will include a total roster of who's where, a roster by table, and a search or lookup capability of where, for example Mrs. Smith is - i.e. Table #3, Seat #4.
 
-Using the email invitation and prompts from github Classroom,
+Don't worry about the mix of companies - they are silly names chosen as a separate file.  You may manually create a data structure to support the Company Names and ID's (for now) that are cross referenced in the seating assignments. - But your working solution should support scalability. -
 
-study the plans on the board use/import and clean if necessary the data from git develop a plan of attack define roles for each of three people in group (do your best to distribute the workload) collaborate using either Repl.it Multiplayer AND/OR gitgub's collaboration tool Some guidance notes
-
-Your group Grade will be penalized if I find one person doing most of the work OR if one person in the group is doing more than defined in the planning documents. You are walways WELCOME and encouraged to use Java API to search for syntax gaps You will be called to task and reported if you go looking for solutions online and use or submit someone else's code. You will be responsible for the code you submit and will be quizzed or tested. You will present your solution, notes and supporting proof of the P_R_O_C_E_S_S
-
-Rubric will follow shortly - but basically
-
--33pts for working solution -33 pts for group work/distribution and process narration in Repl.it and/or github -33pts for comments and supporting documentation
+***POINTS - SCORING***
+**50pts for working solution** 
+- 10 pts for file I/O successful
+- 5pts for company load
+- 10pts for manually adding new registrants/attendees
+- 10pts for seating people correctly distributed across tables
+- 5pts for Roster printouts and search function
+- 5pts for documentation
