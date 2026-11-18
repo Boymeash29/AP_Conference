@@ -4,6 +4,29 @@
   * during the data load itself, or during the method that places people at their seats.
   */
 
-// Attendee.java     Date: __________________
-// @Author ___________________________
+// Attendee.java      Date: 11/18/2026
+// @Author            Asher Boymel
   
+public class Attendee {
+
+  private String name;
+  private int table;
+  private int seatNum;
+  private int company;
+
+  public Attendee(String initName, int initCoId) {
+
+    name = initName;
+    company = initCoId;
+
+  }
+
+  public String getName() { return name; }
+
+  public int getTable() { return table; }
+
+  public int getSeat() { return seatNum; }
+
+  public int getCompany() { return company; }
+
+}
