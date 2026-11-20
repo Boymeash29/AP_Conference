@@ -9,29 +9,29 @@
   
 public class Attendee {
 
-  private String name;
-  private int table;
-  private int seatNum;
-  private int company;
+	private String name;
+	private int table;
+	private int seatNum;
+	private int company;
 
-  public Attendee(String initName, int initCoId) {
+	public Attendee(String initName, int initCoId) {
 
-    name = initName;
-    company = initCoId;
+		name = initName;
+		company = initCoId;
 
-  }
+	}
 
-  public String getName() { return name; }
+	public String getName() { return name; }
 
-  public int getTable() { return table; }
+	public int getTable() { return table; }
 
-  public int getSeat() { return seatNum; }
+	public int getSeat() { return seatNum; }
 
-  public int getCompany() { return company; }
+	public int getCompany() { return company; }
 
 
-  public String toString() {
-    return name;
-  }
-
+	public String toString() {
+		return name;
+	}
+  
 }

@@ -11,11 +11,11 @@ public class ReadFile {
     public void readFile(String fileName) {
 
         File file = new File(fileName);
-        file.useDelimiter(","); // From W3 Schools
 
         // try-with-resources: Scanner will be closed automatically
         try (Scanner myReader = new Scanner(file)) {
             while (myReader.hasNext()) {
+			myReader.useDelimiter(","); // From W3 Schools
             String data = myReader.next();
             System.out.println(data);
             }
