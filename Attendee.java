@@ -29,4 +29,9 @@ public class Attendee {
 
   public int getCompany() { return company; }
 
+
+  public String toString() {
+    return name;
+  }
+
 }
