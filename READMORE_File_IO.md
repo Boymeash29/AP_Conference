@@ -8,11 +8,14 @@ File Class and File I/O is going to be on the exam - review the CED for your stu
 
 In that capacity - I have in previous years provided the following code snipped from w3schools 
 specifically, from:  "https://www.w3schools.com/java/java_files_read.asp"
-KNOW that this MUST include try/catch structure (and which imports are needed)
-Data is read line by line into a String
-That string will need to be split using the String.split() method with quotes (no regex)
-You CANNOT cast a String to an int - instead use the Integer wrapper class Integer
-   and the method parseInt() - 
+-KNOW that this MUST include try/catch structure (and which imports are needed)
+-Data is read line by line into a String
+-That string will need to be split using the String.split() method with quotes (no regex)
+-You CANNOT cast a String to an int 
+--instead use the Integer wrapper class Integer
+---and the method parseInt() - 
+
+
 ```
 import java.io.File;                  // Import the File class
 import java.io.FileNotFoundException; // Import this class to handle errors
