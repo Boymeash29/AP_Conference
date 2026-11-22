@@ -8,21 +8,38 @@ public class ReadFile {
 
     File file;
 
-    public void readFile(String fileName) {
+    public Attendee[] readFile(String fileName) {
 
-        File file = new File(fileName);
+        file = new File(fileName);
+        Attendee[] attendees = new Attendee[0];
 
-        // try-with-resources: Scanner will be closed automatically
-        try (Scanner myReader = new Scanner(file)) {
-            while (myReader.hasNext()) {
-			myReader.useDelimiter(","); // From W3 Schools
-            String data = myReader.next();
-            System.out.println(data);
+        try {
+            // find amount of attendees (would be amazing use of an arraylist)
+            int count = 0;
+            try (Scanner counter = new Scanner(file)) {
+                while (counter.hasNextLine()) {
+                    counter.nextLine();
+                    count++;
+                }
+            }
+
+            attendees = new Attendee[count];
+
+            // fill array with attendees
+            try (Scanner myReader = new Scanner(file)) {
+                int i = 0;
+                while (myReader.hasNextLine()) {
+                    String data = myReader.nextLine();
+                    String[] parts = data.split(",");
+                    attendees[i] = new Attendee(parts[0], parts[1], Integer.parseInt(parts[2])); // TODO: Verify if this works
+                    i++;
+                }
             }
         } catch (FileNotFoundException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
-    }
 
+        return attendees;
+    }
 }
