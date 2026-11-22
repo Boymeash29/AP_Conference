@@ -12,8 +12,7 @@ specifically, from:  "https://www.w3schools.com/java/java_files_read.asp"
 - Data is read line by line into a String
 - That string will need to be split using the String.split() method with quotes (no regex)
 - You CANNOT cast a String to an int 
-- - instead use the Integer wrapper class Integer
-- - -and the method parseInt() - 
+- - instead use the Integer wrapper class Integer, and the method parseInt() - 
 
 
 ```
