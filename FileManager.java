@@ -4,7 +4,7 @@ import java.io.File;                  // Import the File class
 import java.io.FileNotFoundException; // Import this class to handle errors
 import java.util.Scanner;             // Import the Scanner class to read text files
 
-public class ReadFile {
+public class FileManager {
 
     File file;
 
@@ -42,4 +42,41 @@ public class ReadFile {
 
         return attendees;
     }
+
+    public Company[] readCom(String fileName) {
+
+        file = new File(fileName);
+        Company[] companies = new Attendee[0];
+
+        try {
+            // find amount of attendees (would be amazing use of an arraylist)
+            int count = 0;
+            try (Scanner counter = new Scanner(file)) {
+                while (counter.hasNextLine()) {
+                    counter.nextLine();
+                    count++;
+                }
+            }
+
+            companies = new Attendee[count];
+
+            // fill array with attendees
+            try (Scanner myReader = new Scanner(file)) {
+                int i = 0;
+                while (myReader.hasNextLine()) {
+                    String data = myReader.nextLine();
+                    String[] parts = data.split(",");
+                    companies[i] = new Company(parts[0], parts[1], Integer.parseInt(parts[2])); // TODO: Verify if this works
+                    i++;
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
+        return companies;
+
+    }
+
 }
