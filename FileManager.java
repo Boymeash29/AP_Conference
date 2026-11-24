@@ -3,6 +3,8 @@
 import java.io.File;                  // Import the File class
 import java.io.FileNotFoundException; // Import this class to handle errors
 import java.util.Scanner;             // Import the Scanner class to read text files
+import java.io.FileWriter;            // Import the FileWriter class
+
 
 public class FileManager {
 
@@ -41,5 +43,30 @@ public class FileManager {
         }
 
         return attendees;
+    }
+
+    public void addAttendee (String last, String first, int com, String fileName) {
+
+        file = new File(fileName);
+        new Attendee(last, first, com);
+
+        try {
+            // find amount of attendees (would be amazing use of an arraylist)
+            int count = 0;
+            try (Scanner counter = new Scanner(file)) {
+                while (counter.hasNextLine()) {
+                    counter.nextLine();
+                    count++;
+                }
+            }
+
+            FileWriter myWriter = new FileWriter(fileName);
+            myWriter.write(count + "," + last + "," + first + "," + com);
+            myWriter.close();  // must close manually
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
     }
 }
