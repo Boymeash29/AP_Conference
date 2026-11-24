@@ -1,8 +1,8 @@
 public class GuestList {
     
     public static void main (String[] args){
-        FileManager list = new FileManager("names.cvs");
-        list();
+        FileManager list = new FileManager("names.csv");
+        list.readFile("names.csv");
     }
 
 }
