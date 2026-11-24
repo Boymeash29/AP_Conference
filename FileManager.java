@@ -69,4 +69,10 @@ public class FileManager {
         }
 
     }
+
+    public FileManager(String fileName) {
+        
+        readFile(fileName);
+    }
+    
 }
